@@ -1,3 +1,23 @@
 body {
   background-color: pink;
 }
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+
+section#grid-container {
+  display: grid;
+  width: 900px;
+  height: 550px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  /* grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, auto); */
+}
+
+div {
+  border: 1px solid gray;
+}
