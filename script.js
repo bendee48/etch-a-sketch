@@ -3,7 +3,7 @@ let sqCount = 16;
 function setSides() {
   let sqButton = document.querySelector('#sq-button');
   sqButton.addEventListener('click', function(){
-    let num = prompt("How many squares per side?");
+    let num = prompt("How many squares per grid side would you like?");
     while (isNaN(num) || num === "") {
       num = prompt("That's not a number. Please enter a number.");
     }
@@ -12,7 +12,6 @@ function setSides() {
   });
 }
 setSides()
-
 
 function createGrid(numberOfSquares) {
   let sides = Number(numberOfSquares);
@@ -25,7 +24,7 @@ function createGrid(numberOfSquares) {
     container.appendChild(divvy);
   }
   colorDivs();
-  clear();
+  clearGrid();
 }
 createGrid(sqCount)
 
@@ -36,7 +35,6 @@ function deleteGrid() {
   }
 }
 
-/*Apply color to divs*/
 function colorDivs() {
   let divs = Array.from(document.querySelectorAll('#grid-container > div'));
   divs.forEach(function(item){
@@ -75,7 +73,7 @@ function randomColor(){
 randomColor();
 
 /*Clear grid of color*/
-function clear() {
+function clearGrid() {
   let divs = Array.from(document.querySelectorAll('#grid-container > div'));
   let clearBtn = document.querySelector('#clear-button');
   clearBtn.addEventListener('click', function(){
@@ -84,4 +82,4 @@ function clear() {
     });
   });
 }
-clear();
+clearGrid();

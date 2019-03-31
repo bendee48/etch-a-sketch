@@ -1,23 +1,44 @@
 body {
-  background-color: pink;
+  background-color: #f2e9de;
+  font-family: Calibri, sans-serif;
 }
 
 main {
   width: 90%;
   margin: 0 auto;
-  border: 1px solid gray;
+  background-color: #ffebd3;
+  border-radius: 10px;
+  box-shadow: 6px 5px 10px 2px gray;
+  padding-bottom: 2%;
+}
+
+header {
+  margin: 1% 0%;
+}
+
+div.btn-container {
+  text-align: center;
+}
+
+div.btn-container button {
+  margin: 1% 5% 0 5%;
+  padding: 0.5% 2%;
+  border: none;
+  background-color: #ffd8aa;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+div.btn-container button:hover {
+  background-color: #ffbd6b;
 }
 
 section#grid-container {
   display: grid;
   width: 900px;
-  height: 550px;
+  height: 520px;
   margin: 0 auto;
-  border: 1px solid gray;
-  /* grid-template-columns: repeat(4, auto);
-  grid-template-columns: repeat(4, auto); */
-}
-
-div {
-  border: 1px solid gray;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  background-color: #fff0dd;
 }
