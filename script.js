@@ -7,6 +7,7 @@ function setSides() {
     while (isNaN(num) || num === "") {
       num = prompt("That's not a number. Please enter a number.");
     }
+    if (num === null) return;
     deleteGrid();
     createGrid(num);
   });
