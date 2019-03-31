@@ -1,15 +1,17 @@
 let sqCount = 16;
 
-setSides()
-
 function setSides() {
   let sqButton = document.querySelector('#sq-button');
   sqButton.addEventListener('click', function(){
     let num = prompt("How many squares per side?");
+    while (isNaN(num) || num === "") {
+      num = prompt("That's not a number. Please enter a number.");
+    }
     deleteGrid();
     createGrid(num);
   });
 }
+setSides()
 
 
 function createGrid(numberOfSquares) {
